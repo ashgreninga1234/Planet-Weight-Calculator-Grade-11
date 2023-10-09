@@ -1,0 +1,140 @@
+# Course: ICS3
+# Date Started: Nov 2
+# Date Completed: Nov 3
+#This is my attempt at designing a program that allows a user to enter a weight and recieve their weight on other planets.
+
+#A list of the planets and a corresponding number for the user to input to select which planet they want to view their weight on
+print("Mercury     1")
+print("Venus       2")
+print("Mars        3")
+print("Pluto       4")
+print("Jupiter     5")
+print("Neptune     6")
+print("Saturn      7")
+print("Uranus      8")
+print("Coruscant   9")
+print("Mandalore  10")
+
+while True:
+
+ planet=input("Select a planet to calculate your weight on, by typing the corresponding numbers. Type end if you would like to stop. ")
+
+ if planet =="end":
+   break
+
+ planet=int(planet)
+
+#Any number other than the ones on the list will not work 
+ if planet <0 or planet >10:
+  print("Invalid number. Please try again.")
+
+#If the number the user has input is one, the weight you will input will be calculated on Mercury.
+ elif planet ==1:
+   print("You have selected Mercury.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.38;
+   print("The weight on Mercury is: ",mul)
+
+#If the number the user has input is two, the weight you will input will be calculated on Venus.
+ elif planet ==2:
+   print("You have selected Venus.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.91;
+   print("The weight on Venus is: ",mul)
+
+#If the number the user has input is three, the weight you will input will be calculated on Mars.
+ elif planet ==3:
+   print("You have selected Mars.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.38;
+   print("The weight on Mars is: ",mul)
+
+#If the number the user has input is four, the weight you will input will be calculated on Pluto.
+ elif planet ==4:
+   print("You have selected Pluto.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.04;
+   print("The weight on Pluto is: ",mul)
+
+#If the number the user has input is five, the weight you will input will be calculated on Jupiter.
+ elif planet ==5:
+   print("You have selected Jupiter.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*2.34;
+   print("The weight on Jupiter is: ",mul)
+
+#If the number the user has input is six, the weight you will input will be calculated on Neptune.
+ elif planet ==6: 
+   print("You have selected Neptune.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*1.12;
+   print("The weight on Neptune is: ",mul)
+
+#If the number the user has input is seven, the weight you will input will be calculated on Saturn.
+ elif planet ==7:
+   print("You have selected Saturn.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.93;
+   print("The weight on Saturn is: ",mul)
+
+#If the number the user has input is eight, the weight you will input will be calculated on Uranus.
+ elif planet ==8:
+   print("You have selected Uranus.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.92;
+   print("The weight on Uranus is: ",mul)
+
+#If the number the user has input is nine, the weight you will input will be calculated on Coruscant.
+ elif planet ==9:
+   print("You have selected Coruscant.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*0.55;
+   print("The weight on Coruscant is: ",mul)
+
+#If the number the user has input is ten, the weight you will input will be calculated on Mandalore.
+ elif planet ==10:
+   print("You have selected Mandalore.")
+
+   weight=input("Now please enter your weight ")
+
+   weight=int(weight)
+
+   mul=weight*2.00;
+   print("The weight on Mandalore is: ",mul)
+
